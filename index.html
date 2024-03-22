@@ -534,6 +534,10 @@
           }
 
           timeout = setTimeout(() => {
+            offerings.forEach((o) => {
+              o.classList.remove("active", "inactive");
+            });
+
             window.location.href = href;
           }, 3500);
 
